@@ -5,36 +5,31 @@ public class Qes4 {
 	public static void main(String[] args) {
 
 		// 繰り返しを行う処理		
-		for(int i = 1; i <= 9; i++){
+		for(int num1 = 1; num1 <= 9; num1++){
 
 			// 繰り返しを行う処理			
-			for(int j = 1; j <= 9; j++) {
+			for(int num2 = 1; num2 <= 9; num2++) {
 
-				// ２桁で表示する処理				
-				String iWord = String.format("%02d" , i);
-
-				// ２桁で表示する処理				
-				String jWord = String.format("%02d" , j);
-
-				// ２桁で表示する処理				
-				String ijResult = String.format("%02d" , i * j);
-
-				// コンソールに出力する処理				
-				System.out.print(iWord + "*"+ jWord + "=" + ijResult);
-
+				// 変数に式を代入する
+				int result = num1 * num2;
 
 				// 条件を指定する				
-				if(j != 9) {
+				if(num2 != 9) {
 
-					// コンソールに出力する処理					
-					System.out.print(" || ");
+					// コンソールに出力する処理				
+					System.out.printf("%02d * %02d = %02d || ", num1, num2, result);
+
+				}else {
+
+					// コンソールに出力する処理
+					System.out.printf("%02d * %02d = %02d %n", num1,num2, result);
 
 				}
-
+				
 			}
 
-			// 改行をコンソールに出力する処理			
-			System.out.println("\r\n");
+			// コンソールに出力する処理
+			System.out.println();
 
 		}
 

@@ -3,43 +3,38 @@ package curriculum_B;
 public class Qes5 {
 
 	public static void main(String[] args) {
-		
+
 		// 繰り返しを行う処理		
-		for(int i = 1; i <= 9; i++){
+		for(int num1 = 1; num1 <= 9; num1++){
 
-			
+
 			// 繰り返しを行う処理			
-			for(int j = 1; j <= 20; j++) {
+			for(int num2 = 1; num2 <= 20; num2++) {
 
-				// ３桁で表示する処理				
-				String iWord = String.format("%03d" , i);
+				// 変数に式を代入する
+				int result = num1 * num2;
 
-				// ３桁で表示する処理
-				String jWord = String.format("%03d" , j);
 
-				// ３桁で表示する処理
-				String ijResult = String.format("%03d" , i * j);
-
-				// コンソールに出力する処理	
-				System.out.print(jWord + "*"+ iWord + "=" + ijResult);
-
-				
 				// 条件を指定する	
-				if(j != 20) {
+				if(num2 != 20) {
 
-					// コンソールに出力する処理
-					System.out.print(" || ");
+					// 条件に沿ってコンソールに出力する処理				
+					System.out.printf("%03d * %03d = %03d || ", num1, num2, result);
+
+				}else {
+
+					// 条件以外の場合にコンソールに出力する処理		
+					System.out.printf("%03d * %03d = %03d %n", num1,num2, result);
 
 				}
-			
+
 			}
+			
+			// コンソールに出力する処理
+			System.out.println();
 
-			// 改行をコンソールに出力する処理
-			System.out.println("\r\n");
-
-		
 		}
-	
+
 	}
 
 }

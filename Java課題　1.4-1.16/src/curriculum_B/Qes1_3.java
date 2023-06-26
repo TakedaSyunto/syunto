@@ -120,7 +120,6 @@ public class Qes1_3 {
                             \r\n負けは次につながるチャンスです！
                             \r\nネバーギブアップ！
                             """);
-					repeatHund = false;
 
 				}
 
@@ -132,7 +131,6 @@ public class Qes1_3 {
                             \r\nたかがジャンケン、そう思ってないですか？
                             \r\nそれやったら次も、勝ちますよ
                             """);
-					repeatHund = false;
 
 				}
 
@@ -144,16 +142,13 @@ public class Qes1_3 {
                             \r\nなんで負けたか、明日まで考えといてください。
                             \r\nそしたら何かが見えてくるはずです
                             """);
-					repeatHund = false;
-
+			
 				}
 
 				// それ以外の場合にコンソールに出力する処理				
 				else{
 
 					System.out.println("\r\n\r\nDRAW あいこ もう一回しましょう！");
-
-					repeatHund = false;
 
 				}
 

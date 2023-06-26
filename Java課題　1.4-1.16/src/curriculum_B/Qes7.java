@@ -66,7 +66,9 @@ public class Qes7 {
 
 			// コンソールに出力する処理
 			System.out.printf("\r\n\r\n%d人目の平均点は%.2f点です%n", (num1 + 1), average);			
+		
 		}
+		
 
 		for(int num2 = 0; num2 < subject.length; num2++){
 
@@ -75,9 +77,29 @@ public class Qes7 {
 
 			// コンソールに出力する処理
 			System.out.printf("\r\n\r\n%sの平均点は%.2f点です%n", subject[num2], eachAverage);		
-
-
+		
 		}
+		
+		// 変数の初期値を代入し初期化する
+		int totalScore = 0;
+		
+			for(int num1 = 0; num1 < count; num1++) {
+				
+				for(int num2 = 0; num2 < subject.length; num2++)
+					
+			// 
+			totalScore += scores[num1][num2];
+			
+		}
+		
+		
+			double totalAverage = (double) totalScore / (count * subject.length);
+		
+			// 全体の平均点を表示する
+			System.out.printf("\r\n\r\n全体の平均点は%.2f点です%n", totalAverage);
+		
+		
+	    
 
 		// スキャナーを閉じる
 		scanner.close();

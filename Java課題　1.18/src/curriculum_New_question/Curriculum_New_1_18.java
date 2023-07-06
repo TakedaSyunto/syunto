@@ -3,14 +3,17 @@ package curriculum_New_question;
 import java.util.Random;
 
 public class Curriculum_New_1_18 {
+	
 	// Q1：引数に文字列型と整数型をいれてコンソールに「Hello JavaSE 11」と出力するメソッドを作成してください。
 
 	
-	public static void outputMessage(String message, int num){
+	public static void toMessage(String message, int num){
 
+		
 		// コンソールに出力する処理
 		System.out.println(message + " " + num);
 
+		
 	}
 
 	// Q2：引数に整数を渡すと渡した値同士を乗算しコンソールに出力するメソッドを作成してください
@@ -18,6 +21,7 @@ public class Curriculum_New_1_18 {
 	
 	public static void multiplication(int num1, int num2){
 
+		
 		// 計算式を変数に代入する
 		int result = num1 * num2;
 
@@ -30,6 +34,7 @@ public class Curriculum_New_1_18 {
 
 	
 	public static void order(int[] product) {
+		
 		
 		for(int num : product) {
 			
@@ -44,6 +49,7 @@ public class Curriculum_New_1_18 {
 
 	
 	public static void add(double num1, double num2) {
+		
 		
 		// 変数に式を代入する
 		double result = num1 + num2;
@@ -60,13 +66,14 @@ public class Curriculum_New_1_18 {
 	
 	public static int[] randomNumbers(int count) {
 		
+		
 		// 乱数オブジェクトの生成
 		Random random = new Random();
 		
 		// 収納する配列
-		int[] num1 =new int[count];
+		int[] num =new int[count];
 		
-		for(int num2 = 0; num2 < count; num2++) {
+		for(int i = 0; i < count; i++) {
 			
 			// 乱数を生成する処理する
 			int randomNumber = random.nextInt(100) + 1;
@@ -75,12 +82,12 @@ public class Curriculum_New_1_18 {
 			System.out.println(randomNumber);
 			
 			// 生成された乱数を配列に収納する
-			num1[num2] = randomNumber;
+			num[i] = randomNumber;
 			
 		}
 		
 		// 格納した値を返す
-		return num1;
+		return num;
 		
 	}
 	
@@ -89,6 +96,7 @@ public class Curriculum_New_1_18 {
 
 	
 	public static double receiveAverage(int[] num1) {
+		
 		
 		// 変数に初期値を代入し初期化する
 		int total = 0;
@@ -116,7 +124,8 @@ public class Curriculum_New_1_18 {
 	// Q7：引数にQ6で作成したメソッドの返り値を受け取り、受け取った値が50以上ならばtrueそれ以外はfalseを返しコンソールに出力してください
 
 	
-	public static boolean check(int[] average) {
+	public static boolean isCheck(int[] average) {
+		
 		
 		// 計算式を変数に代入する
 		double num1 = receiveAverage(average);
@@ -135,7 +144,7 @@ public class Curriculum_New_1_18 {
 	  
 		
 	  // 引数に文字列型と整数型を渡して出力する
-      outputMessage("Hello JavaSE", 11);
+      toMessage("Hello JavaSE", 11);
       
       
       // 引数として整数型を渡して乗算結果を出力する
@@ -149,8 +158,14 @@ public class Curriculum_New_1_18 {
       order(product);
       
       
+      // 変数に小数を代入する
+      double num1 = 1.4;
+      
+      // 変数に小数を代入する
+      double num2 = 3.9;
+      
       // 引数として小数2つを渡して和算結果を出力する
-      add(1.4,3.9);
+      add(num1,num2);
       
       
       // 引数として整数を渡し乱数を格納して出力し、格納した値を返す
@@ -161,7 +176,7 @@ public class Curriculum_New_1_18 {
       receiveAverage(randomNumber);
       
       // 変数に代入する
-      boolean result = check(randomNumber);
+      boolean result = isCheck(randomNumber);
       
       // コンソールに出力する処理
       System.out.println(result);

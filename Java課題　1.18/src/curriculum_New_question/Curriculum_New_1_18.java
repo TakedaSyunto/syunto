@@ -13,7 +13,7 @@ public class Curriculum_New_1_18 {
 
 		
 		// コンソールに出力する処理
-		System.out.println(message + " " + num);
+		System.out.println("\n" + message + " " + num);
 
 		
 	}
@@ -33,7 +33,7 @@ public class Curriculum_New_1_18 {
 
 		
 		// コンソールに出力する処理
-		System.out.println(result);
+		System.out.println("\n" + result);
 
 		
 	}
@@ -52,7 +52,7 @@ public class Curriculum_New_1_18 {
 			
 			
 			// コンソールに出力する処理
-			System.out.println(num);
+			System.out.println("\n" + num);
 	
 			
 		}
@@ -74,7 +74,7 @@ public class Curriculum_New_1_18 {
 	
 		
 		// コンソールに出力する処理
-		System.out.println(result);
+		System.out.println("\n" + result);
 	
 	}
 	
@@ -106,7 +106,7 @@ public class Curriculum_New_1_18 {
 			
 			
 			// コンソールに出力する処理
-			System.out.println(randomNumber);
+			System.out.println("\n" + randomNumber);
 			
 			
 			// 生成された乱数を配列に収納する
@@ -152,7 +152,7 @@ public class Curriculum_New_1_18 {
 		
 		
 		// コンソールに出力する処理
-		System.out.println(String.format("%.2f" , average));
+		System.out.println("\n" + String.format("%.2f" , average));
 		
 		
 		// 格納した値を返す
@@ -174,7 +174,7 @@ public class Curriculum_New_1_18 {
 		boolean conditions = average >= 50;
 		
 		// コンソールに出力する処理
-		System.out.println(conditions);
+		System.out.println("\n" + conditions);
 		
 		
 		// 格納した値を返す

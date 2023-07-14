@@ -10,7 +10,7 @@ public class Dog {
 	// Q2：フィールドに動物の数の変数を定義してください。
 
 	// 動物の数の変数を定義する
-	private static int count;
+	private int number;
 
 
 	// Q3：Q1で作成した変数に「犬」を代入するコンストラクタを作成してください。
@@ -21,22 +21,19 @@ public class Dog {
 		// 名前を指定する
 		this.name = "犬";
 
-		// 加算する
-		count++;
-
 	}
 
 
 	// Q4：Q2で作成した変数に引数を代入するコンストラクタを作成してください。
 
 
-	public Dog(String name) {
+	public Dog(int number) {
 
-		// 引数の名前を指定する
-		this.name = name;
+		// 引数の数字を指定する
+		this.number = number;
 
 		// 加算する
-		count++;
+		number++;
 
 	}
 
@@ -50,10 +47,10 @@ public class Dog {
 	}
 
 
-	public static int getCount() {
+	public int getNumber() {
 
 		// 数を返す処理
-		return count;
+		return number;
 
 	}
 

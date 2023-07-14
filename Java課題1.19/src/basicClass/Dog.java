@@ -20,7 +20,7 @@ public class Dog {
 
 		// 名前を指定する
 		this.name = "犬";
-
+		
 	}
 
 
@@ -31,9 +31,6 @@ public class Dog {
 
 		// 引数の数字を指定する
 		this.number = number;
-
-		// 加算する
-		number++;
 
 	}
 

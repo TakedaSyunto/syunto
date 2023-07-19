@@ -1,22 +1,15 @@
 package main;
 
-import java.util.Scanner;
 
 public class Sub {
 
-	public void display() {
+	public static void display() {
 		
 		// コンソールに出力する処理
 		System.out.println("コンソールに文字を入力してください");
 		
-		// Scannerオブジェクトを作成
-		Scanner scanner = new Scanner(System.in);
-		
-		// 入力された値を取得する
-		String animal = scanner.nextLine();
-		
-		// スキャナーを閉じる
-		scanner.close();
+		// Mainクラスから呼び出し変数に代入する
+		String animal = Main.scan();
 		
 		// 入力された値を分割し配列に収納する
 		String[] space = animal.split(",");

@@ -3,16 +3,11 @@ package main;
 
 public class Sub {
 
-	public static void display() {
+	public static void display(String[] space) {
 		
 		// コンソールに出力する処理
 		System.out.println("コンソールに文字を入力してください");
 		
-		// Mainクラスから呼び出し変数に代入する
-		String animal = Main.scan();
-		
-		// 入力された値を分割し配列に収納する
-		String[] space = animal.split(",");
 		
 		// 文字列を配列に収納する
 		String[] info = {"動物名","体長","速度","学名"};
@@ -91,5 +86,5 @@ public class Sub {
         }
 
     }
-    
+
 }

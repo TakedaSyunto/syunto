@@ -3,32 +3,26 @@ package main;
 import java.util.Scanner;
 
 class Main {
-	
-	public static String scan() {
-		
-		
+
+	public static void main(String[] args) {
+
 		// Scannerオブジェクトを作成
 		Scanner scanner = new Scanner(System.in);
 
 		// 入力された値を取得する
 		String animal = scanner.nextLine();
 
-		// スキャナーを閉じる
-		scanner.close();
-		
-		// 値を返す処理
-		return animal;
-		
-}
-	
-	
-	public static void main(String[] args) {
+		// 入力された値を分割し配列に収納する
+		String[] space = animal.split(",");
 
 
 		// 呼び出しコンソールに出力する処理
-		Sub.display();
+		Sub.display(space);
 
-		
+		// スキャナーを閉じる
+		scanner.close();
+
+
 	}
 
 }

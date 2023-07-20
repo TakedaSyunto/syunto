@@ -3,6 +3,7 @@ package sub;
 
 public class Person{
 	
+	
 	// 名前を定義する
 	public String name;
 	

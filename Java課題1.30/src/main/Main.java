@@ -17,5 +17,4 @@ public class Main{
 		person1.printTotal();
 		
 	}
-
 }

@@ -5,13 +5,13 @@ public class Person{
 	
 	
 	// 名前を定義する
-	public String name;
+	private String name;
 	
 	// 年齢を定義する
-	public int age;
+	private int age;
 	
 	// 身長を定義する
-	public double height;
+	private double height;
 	
 	// 体重を定義する
 	private double weight;
@@ -33,6 +33,7 @@ public class Person{
 		
 	}
 	
+	
 	public double bmi() {
 		
 		
@@ -49,8 +50,8 @@ public class Person{
 	
 		// コンソールに出力する処理
 		System.out.println("名前は" + this.name + "です"
-				+ "\n年は" + this.age + "です"
-				+ "\nBMIは" + String.format("%.1f",this.bmi()) + "です");
+				+ "\nBMIは" + String.format("%.1f",this.bmi()) + "です"
+				+ "\n年は" + this.age + "です");
 		
 	}
 	
